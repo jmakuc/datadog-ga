@@ -50,7 +50,7 @@ class GoogleAnalyticsCheck(AgentCheck):
       pageviewsDims = pageviewsDims + confDims
     result = self.get_results(profile, metricName, pageviewsDims)
     headers = result.get('columnHeaders')
-    rows = result.get('rows')
+    rows = result.get('rows', [])
 
     if len(rows) < 1:
       return
