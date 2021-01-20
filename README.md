@@ -37,14 +37,14 @@ If you are ready with this, go directly to Step 3: Installing the check.
 4. Goto to *User Management*
 5. Add permissions for the service account email address (Read & Analyze)
 6. Select the property and the view you wish to collect metrics from
-7. **Take note of the View ID for later** (ie: 12345678)
+7. **Take note of the View ID for later** (ie: 12345678) (You can find this id in the url for Google Analytics as well, its the value after p)
 
 ### Step 3: Install the check (Finally!)
 > This steps are based on Ubuntu Linux.
 
 1. Clone or download from [https://github.com/bithauschile/datadog-ga](https://github.com/bithauschile/datadog-ga)
 2. Install python libraries
-  1. Use pip to install the Google API client for Python: `/opt/datadog-agent/embedded/bin/pip install --upgrade google-api-python-client`
+  1. Use pip to install the Google API client for Python: `sudo /opt/datadog-agent/embedded/bin/pip install --upgrade google-api-python-client`
 3. Install the check:
   - Copy ga.yaml to /etc/datadog-agent/conf.d/
   - Copy ga.py to /etc/datadog-agent/checks.d/
