@@ -63,7 +63,7 @@ class GoogleAnalyticsCheck(AgentCheck):
       if int(row[0]) == 1:
         tags = []
         tags.extend(instanceTags)
-        for i in xrange(len(headers)-1):
+        for i in range(len(headers)-1):
           if i > 0:
             # we remove the "rt" from the dimension name
             tags.append(headers[i].get('name')[3:] + ":" + row[i])
