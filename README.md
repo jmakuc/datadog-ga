@@ -42,7 +42,7 @@ If you are ready with this, go directly to Step 3: Installing the check.
 ### Step 3: Install the check (Finally!)
 > This steps are based on Ubuntu Linux.
 
-1. Clone or download from [https://github.com/bithauschile/datadog-ga](https://github.com/bithauschile/datadog-ga)
+1. Clone or download from [https://github.com/ramseymcgrathfd/datadog-ga/tree/python2-to-3](https://github.com/ramseymcgrathfd/datadog-ga/tree/python2-to-3)
 2. Install python libraries
   1. Use pip to install the Google API client for Python: `sudo /opt/datadog-agent/embedded/bin/pip install --upgrade google-api-python-client`
 3. Install the check:
